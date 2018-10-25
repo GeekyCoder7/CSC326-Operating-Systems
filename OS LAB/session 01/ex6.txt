@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#numbers taken as cmd line args can be accessed using $1 $2 etc..
+
+add=$(($1 + $2))
+sub=$(($1 - $2))
+mul=$(($1 * $2))
+echo "$1 + $2 = $add"
+echo "$1 - $2 = $sub"
+echo "$1 * $2 = $mul"

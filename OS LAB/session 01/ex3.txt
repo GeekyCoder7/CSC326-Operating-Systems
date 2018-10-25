@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+echo "Values exchange"
+
+echo "Enter the 1st value:"
+read n1
+echo "Enter the 2nd value:"
+read n2
+
+temp=$n1
+n1=$n2
+n2=$temp
+
+echo the value 1 is now $n1
+echo the value 2 is now $n2

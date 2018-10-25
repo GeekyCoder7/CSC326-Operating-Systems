@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo "Enter a 5 digit number"
+read num
+init=$num
+rev=0					#initialize reverse nbr
+
+while [ $num -ne 0 ] 	#not equal
+do
+r=$(expr $num % 10)		#get last digit
+rev=$(($rev * 10 + $r)) #move digit to the left and add new digit
+num=$(expr $num / 10) 	#remove last digit
+done 			 		#end of while loop
+
+echo "Reverse of $init is $rev"
+
+revf=$(echo $init | rev) 	
+echo Using the rev function: $revf

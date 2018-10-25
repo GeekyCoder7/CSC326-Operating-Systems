@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo "Please fill in your student card"
+
+echo "Enter your name:"
+read Name
+echo "Enter your program name:"
+read Prog
+echo "Enter your enrollment number:"
+read EnNbr
+
+echo ""
+echo "Your filled student card:"
+echo Name: $Name
+echo Program Name: $Prog
+echo Enrollment Number: $EnNbr

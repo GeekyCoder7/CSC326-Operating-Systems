@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo "Arithmetic operations"
+
+echo "Enter the 1st nbr:"
+read n1
+echo "Enter the 2nd nbr:"
+read n2
+echo "Enter the 3rd nbr:"
+read n3
+echo "Enter a 4th nbr:"
+read n4
+
+sum=$(expr $n1 + $n2 + $n3 + $n4)
+avg=$(bc -l <<< $sum/4)
+
+echo the sum is $sum
+echo the avg is $avg
+echo the product is $(($n1 * $n2 * $n3 * $n4))

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo "odd positions" 
+
+echo “Enter a 5 digit number”
+read num
+
+i=1 #initialize counter
+
+while [ $i -le 5 ] #if n<5
+do
+a=$(echo $num | cut -c $i) #print only character at position i
+echo $a is in odd position $i
+
+i=$(expr $i + 2) #jump to next odd position
+
+done #end of while loop
